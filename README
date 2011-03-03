@@ -9,4 +9,28 @@ Required plugins:
 Syntax:
   [~~PUB] Abstract [~*~*~] BibTeX [PUB~~]
 
+Example:
+  [~~PUB]
+  In this paper we present the implementation of a framework for accelerating training and
+  classification of arbitrary Convolutional Neural Networks (CNNs) on the GPU. CNNs are a
+  derivative of standard Multilayer Perceptron (MLP) neural networks optimized for two-dimensional
+  pattern recognition problems such as Optical Character Recognition (OCR) or face detection.
+  We describe the basic parts of a CNN and demonstrate the performance and scalability improvement
+  that can be achieved by shifting the computation-intensive tasks of a CNN to the GPU. Depending
+  on the network topology training and classification on the GPU performs 2 to 24 times faster
+  than on the CPU. Furthermore, the GPU version scales much better than the CPU implementation
+  with respect to the network size.
+  [~*~*~]
+  @INPROCEEDINGS{Strigl2010-CNNGPU,
+    author = {D. Strigl and K. Kofler and S. Podlipnig},
+    title = {{Performance and Scalability of GPU-based Convolutional Neural Networks}},
+    booktitle = {Proceedings of the 18th Euromicro International Conference on Parallel,
+      Distributed and Network-Based Computing (PDP 2010)},
+    pages = {317--324},
+    address = {Pisa, Italy},
+    month = {February},
+    year = {2010}
+  }
+  [PUB~~]
+
 See COPYING and file headers for license info.
