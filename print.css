@@ -1,0 +1,10 @@
+/**
+ * Publication Utilities Plugin styles (Print)
+ *
+ * @license http://www.gnu.org/licenses/gpl-3.0.html GPLv3
+ * @author  Daniel Strigl
+ */
+
+pre.prePubUtils_BibTeX, div.divPubUtils_Abstract {
+    display: show;
+}

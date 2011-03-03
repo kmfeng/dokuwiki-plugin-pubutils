@@ -1,0 +1,43 @@
+/**
+ * Publication Utilities Plugin styles (Screen)
+ *
+ * @license http://www.gnu.org/licenses/gpl-3.0.html GPLv3
+ * @author  Daniel Strigl
+ */
+
+a.aPubUtils_BibTeX, a.aPubUtils_Abstract {
+    display: inline-block;
+    border: 1px solid __text_alt__;
+    text-decoration: none !important;
+    color: __text_alt__ !important;
+    font-size: 90% !important;
+    padding: 1px 5px 1px 5px;
+    margin: 5px 5px 0 0;
+}
+
+a.aPubUtils_OPEN {
+    background-color: __background_other__;
+}
+
+a:hover.aPubUtils_BibTeX, a:hover.aPubUtils_Abstract {
+    border: 1px solid __text__;
+    color: __text__ !important;
+    background-color: __highlight__;
+}
+
+pre.prePubUtils_BibTeX, div.divPubUtils_Abstract {
+    display: none;
+    overflow: auto;
+    border: 1px dotted __border__;
+    color: __text_alt__ !important;
+}
+
+pre.prePubUtils_BibTeX {
+    font-size: 80% !important;
+}
+
+div.divPubUtils_Abstract {
+    margin-top: 7px;
+    padding: 5px;
+    font-size: 85% !important;
+}

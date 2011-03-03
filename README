@@ -1,0 +1,12 @@
+DokuWiki Publication Utilities Plugin
+=====================================
+
+DokuWiki plugin to create foldable sections for the Abstract and BibTeX entry of a publication.
+
+Required plugins:
+  jQuery plugin (https://github.com/cosmocode/dokuwiki-plugin-jquery)
+
+Syntax:
+  [~~PUB] Abstract [~*~*~] BibTeX [PUB~~]
+
+See COPYING and file headers for license info.
