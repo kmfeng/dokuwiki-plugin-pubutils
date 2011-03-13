@@ -1,0 +1,6 @@
+base   pubutils
+author Daniel Strigl
+date   2011-02-24
+name   Publication Utilities Plugin
+desc   Foldable sections for the Abstract and BibTeX entry of a publication. Requires the jQuery plugin (https://github.com/cosmocode/dokuwiki-plugin-jquery). Syntax: [~~PUB] Abstract [~*~*~] BibTeX [PUB~~]
+url    http://danielstrigl.com/

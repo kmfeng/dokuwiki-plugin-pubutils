@@ -19,26 +19,10 @@ if (!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN', DOKU_INC.'lib/plugins/');
 require_once DOKU_PLUGIN.'syntax.php';
 
 class syntax_plugin_pubutils extends DokuWiki_Syntax_Plugin {
-
-    function getInfo(){
-        return array(
-            'author' => 'Daniel Strigl',
-            'email'  => '',
-            'date'   => '2011-02-24',
-            'name'   => 'Publication Utilities Plugin',
-            'desc'   => 'Foldable sections for the Abstract and BibTeX entry of a publication.
-                         Requires the jQuery plugin (https://github.com/cosmocode/dokuwiki-plugin-jquery).
-                         Syntax:
-                         [~~PUB] Abstract [~*~*~] BibTeX [PUB~~]',
-            'url'    => 'http://danielstrigl.com/'
-        );
-    }
-
     function getType() { return 'substition'; }
     function getAllowedTypes() { return array('formatting', 'substition', 'disabled'); }
     function getPType() { return 'normal'; }
     function getSort() { return 444; }
-
     function connectTo($mode) {
         $this->Lexer->addSpecialPattern('\[~~PUB\][\s\S]*?\[~\*~\*~\][\s\S]*?\[PUB~~\]', $mode, 'plugin_pubutils');
     }
